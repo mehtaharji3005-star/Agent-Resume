@@ -1,3 +1,19 @@
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
+import langchain
+from langchain.agents import create_agent
+from tavily import TavilyClient
+import pytesseract as pyt
+import streamlit as st
+import os
+import time
+from PIL import Image
+import pandas as pd
+import numpy as np
+import warnings
+warnings.filterwarnings("ignore")
+print("MODULE LOADED SUCCESSFULLY : THANK YOU ")
+
 # to show web app : complete page layout
 st.set_page_config(layout="wide")
 
@@ -18,21 +34,7 @@ GOOGLE_API_KEYS="AQ.Ab8RN6KOIvA0tj5Bp_NgXq4Av9dtJn7bSzrGzk7SSy9V5WVjVQ"
 # tool
 # app.py
 
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_groq import ChatGroq
-import langchain
-from langchain.agents import create_agent
-from tavily import TavilyClient
-import pytesseract as pyt
-import streamlit as st
-import os
-import time
-from PIL import Image
-import pandas as pd
-import numpy as np
-import warnings
-warnings.filterwarnings("ignore")
-print("MODULE LOADED SUCCESSFULLY : THANK YOU ")
+
 
 model = ChatGoogleGenerativeAI(
     model = "gemini-3.5-flash-lite",
