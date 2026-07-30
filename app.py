@@ -48,14 +48,14 @@ options=["Delhi","Mumbai",
          "pune","banglore",
          "gurugram"]
 locations = st.sidebar.multiselect("Select Locations",
-                                   option = options)
+                                   options = options)
 
 profile_op = ["Data Analysts","AI Engineer",
               "Gen AI developer", "Full-stack dev",
               "Data Scientist"]
 
 profile = st.sidebar.multiselect("select Job Profile",
-                                option = options)
+                                options = options)
 
 # ===============GET USER INFO================== #
 st.markdown("""### GET USER INFO ###""")
