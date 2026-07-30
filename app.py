@@ -29,10 +29,9 @@ st.sidebar.image("bg.png")
 
 
 # Step 3
-Groq_AI_APIs_Keys = "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"
-tavily_api_key = "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"
-GOOGLE_API_KEYS="AQ.Ab8RN6KOIvA0tj5Bp_NgXq4Av9dtJn7bSzrGzk7SSy9V5WVjVQ"
-
+Groq_AI_APIs_Keys = st.sidebar.text_input("Groq-API",type="password")
+tavily_api_key =  st.sidebar.text_input("Tavily-API",type="password")
+GOOGLE_API_KEYS = st.sidebar.text_input("Google-API",type="password")
 # project flow
 # model
 # tool
