@@ -160,11 +160,11 @@ def get_jobs(agent,Location = "Delhi", Profile = "Data Entry, Ml in Pyhton"):
  # code = get_jobs(agent)
  # DISPLAY.HTML(code)
 
-st.button ("Genrate Resume"):
+if st.button ("Genrate Resume"):
            with st.spinner("Agents running"):
                       code = main_agent(agent,user_info)
                       st.html(code, width="stretch",
-                             unsafe_allow_javascript=True)
+                                  unsafe_allow_javascript=True)
                       st.divider()
                       jobe_code=get_jobs(agent,location,profile)
                       st,html(jobe_code, width="stretch",
