@@ -105,13 +105,11 @@ def main_agent(agent,query):
 # DISPLAY.HTML(code)
 
   # fetch latest domain related jobs using tavily
-  def get_jobs(agent,
-             Location = "Delhi",
-             Profile = "Data Entry, Ml in Pyhton"):
+def get_jobs(agent,Location = "Delhi", Profile = "Data Entry, Ml in Pyhton"):
   location ="Delhi"
   Profile= "Data entry, Ml in Pyhton"
 
-  prompt = """based on user given job profile,
+  prompt = f"""based on user given job profile,
   fetch latest jobs or jobs apply article
   using naukri, linkdin, indeed or all populer
   job apply platform, show results with
