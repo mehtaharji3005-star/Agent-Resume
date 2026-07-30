@@ -166,6 +166,6 @@ if st.button ("Genrate Resume"):
                       st.html(code, width="stretch",
                                   unsafe_allow_javascript=True)
                       st.divider()
-                      jobe_code=get_jobs(agent,location,profile)
+                      job_code = get_jobs(agent,location,profile)
                       st,html(jobe_code, width="stretch",
                                  unsafe_allow_javascript=True)
