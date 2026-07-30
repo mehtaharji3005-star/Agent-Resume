@@ -36,7 +36,7 @@ GOOGLE_API_KEYS = st.sidebar.text_input("Google-API",type="password")
 all_API = [tavily_api_key, Groq_AI_APIs_Keys,
            GOOGLE_API_KEYS]
 if not all(all_API):
-    ST.error("Must give API KEYS")
+    st.error("Must give API KEYS")
     st.stop()
 elif all(all_API):
     st.success("API KEYS LOADED SUCCESSFULLY")
