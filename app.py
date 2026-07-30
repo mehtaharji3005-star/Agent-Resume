@@ -23,6 +23,8 @@ st.write("""THIS APP HELP TO CUSTOMISED PROFFESSIONAL RESUME
 WITH LATEST JPB APPL LINKS""")
 
 st.image("bg.png")
+st.sidebar.title("fill important detailed which we required")
+st.sidebar.image("bg.png")
 
 # Step 3
 Groq_AI_APIs_Keys = "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"
