@@ -47,6 +47,19 @@ else:
 options=["Delhi","Mumbai",
          "pune","banglore",
          "gurugram"]
+locations = st.sidebar.multiselect("Select Locations",
+                                   option = options)
+
+profile_op = ["Data Analysts","AI Engineer",
+              "Gen AI developer", "Full-stack dev",
+              "Data Scientist"]
+
+profile = st.sidebar.multiselect("select Job Profile",
+                                option = options)
+
+# ===============GET USER INFO================== #
+st.markdown("""### GET USER INFO ###""")
+user_info = st.text_area(""" write you resume Decsriptions : """) 
 
 # project flow
 # model
