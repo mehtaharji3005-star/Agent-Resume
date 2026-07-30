@@ -43,6 +43,11 @@ elif all(all_API):
 else:
     st.info("passes ALL the API keys Succesfully")
 
+# Multiselect option
+options=["Delhi","Mumbai",
+         "pune","banglore",
+         "gurugram"]
+
 # project flow
 # model
 # tool
