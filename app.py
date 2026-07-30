@@ -32,12 +32,21 @@ st.sidebar.image("bg.png")
 Groq_AI_APIs_Keys = st.sidebar.text_input("Groq-API",type="password")
 tavily_api_key =  st.sidebar.text_input("Tavily-API",type="password")
 GOOGLE_API_KEYS = st.sidebar.text_input("Google-API",type="password")
+
+all_API = [tavily_api_key, Groq_AI_APIs_Keys,
+           GOOGLE_API_KEYS]
+if not all(all_API):
+    ST.error("Must give API KEYS")
+    st.stop()
+elif all(all_API):
+    st.success("API KEYS LOADED SUCCESSFULLY")
+else:
+    st.info("passes ALL the API keys Succesfully")
+
 # project flow
 # model
 # tool
 # app.py
-
-
 
 model = ChatGoogleGenerativeAI(
     model = "gemini-3.5-flash-lite",
